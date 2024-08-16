@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* fundo escuro para um contraste futurista */
+    color: #e0e0e0; /* texto claro para contraste */
+}
+
+header {
+    padding: 16px;
+    background-color: #0d0d0d; /* preto quase absoluto */
+    color: #00bfff; /* azul neon */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #00bfff; /* azul neon */
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #1a1a1a; /* fundo escuro */
+    color: #804CF6; /* roxo neon */
+}
+
+.descricao p {
+    padding: 5px;
+    text-align: justify;
+    color: #e0e0e0; /* texto claro */
+}
+
+.characters p,
+.evas p {
+    text-align: justify;
+    padding: 15px;
+    color: #e0e0e0; /* texto claro */
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    padding: 16px 0;
+}
+
+h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 16px;
+    color: #00bfff; /* azul neon */
+}
+
+h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #00bfff; /* azul neon */
+}
+
+#about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#about .descricao {
+    flex: 1;
+    margin-right: 16px;
+}
+
+#about iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.character {
+    flex: 1 1 30%;
+    text-align: center;
+    background-color: #333; /* cinza escuro */
+    border-radius: 5%;
+    padding: 16px 8px;
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.character .read-more {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00bfff; /* azul neon */
+    color: #1a1a1a; /* fundo escuro */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.character .read-more:hover {
+    background-color: #804CF6; /* roxo neon */
+    transform: scale(1.1); 
+}
+
+.evas .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.eva {
+    flex: 1;
+    text-align: center;
+    background-color: #333; /* cinza escuro */
+    border-radius: 5%;
+    padding: 16px 8px;
+}
+
+.eva img {
+    max-height: 180px;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.eva .read-more {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00bfff; /* azul neon */
+    color: #1a1a1a; /* fundo escuro */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.eva .read-more:hover {
+    background-color: #804CF6; /* roxo neon */
+    transform: scale(1.1); 
+}
+
+#autor .container {
+    display: flex;
+    flex-direction: column; /* Alinha o título e o conteúdo em coluna */
+    align-items: center;
+    background-color: #1a1a1a; /* Fundo escuro para destacar a seção */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+}
+
+#autor h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #00bfff; /* Azul neon para o título */
+    margin-bottom: 20px; /* Espaço entre o título e o conteúdo */
+}
+
+#autor .autor {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* Maior espaço entre imagem e texto */
+    background-color: #333; /* Fundo cinza escuro para o bloco do autor */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+    width: 100%;
+    max-width: 1000px; /* Limita a largura do conteúdo do autor */
+}
+
+#autor .autor img {
+    width: 500px; /* Tamanho ajustado para um visual mais equilibrado */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para um efeito de profundidade */
+}
+
+#autor .info-autor {
+    flex: 1; /* Permite que a área de informações ocupe o espaço restante */
+}
+
+#autor .info-autor h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    margin-top: 0;
+    color: #00bfff; /* Azul neon para o nome do autor */
+}
+
+#autor .info-autor p {
+    margin-top: 8px;
+    color: #e0e0e0; /* Texto claro */
+    font-size: 16px; /* Tamanho de fonte ajustado para melhor legibilidade */
+}
+
+
+.social-links img:hover {
+    transform: scale(1.1); /* efeito de zoom ao passar o mouse */
+}
+
+.social-links img {
+    height: 24px;
+}
+
+#contact .container {
+    display: block;
+    justify-content: space-between;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-methods form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-methods input,
+.contact-methods textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #666; /* cinza escuro para os inputs */
+    border-radius: 4px;
+    background-color: #1a1a1a; /* fundo escuro */
+    color: #e0e0e0; /* texto claro */
+}
+
+.contact-methods button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00bfff; /* azul neon */
+    color: #1a1a1a; /* fundo escuro */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-methods button:hover {
+    background-color: #804CF6; /* roxo neon */
+}
+
+.contact-location {
+    flex: 1;
+    text-align: left;
+}
+
+#contact ul {
+    display: flex;
+    list-style: none;
+}
+
+footer {
+    padding: 16px;
+    background-color: #0d0d0d; /* preto quase absoluto */
+    color: #e0e0e0; /* texto claro */
+    text-align: center;
+}
